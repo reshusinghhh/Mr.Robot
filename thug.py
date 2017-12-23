@@ -3,7 +3,7 @@ from PIL import Image
 import numpy as np
 import time
 
-# thug life meme mask image path
+# mask image path
 maskPath = "/home/reshu/Desktop/fsoc.png"
 # haarcascade path
 cascPath = "/home/reshu/opencv/opencv-3.2.0/data/haarcascades/haarcascade_frontalface_default.xml"
@@ -14,9 +14,9 @@ faceCascade = cv2.CascadeClassifier(cascPath)
 # Open mask as PIL image
 mask = Image.open(maskPath)
 
-def thug_mask(image):
+def fsoc_mask(image):
 	"""
-	function to add thug life mask to input image
+	function to add mask to input image
 	"""
 
 	# convert input image to grayscale
