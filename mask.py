@@ -48,7 +48,7 @@ while True:
 
 	if ret == True:
 		# show frame with thug life mask
-		cv2.imshow('Live', thug_mask(frame))
+		cv2.imshow('Live', fsoc_mask(frame))
 
 		# chck if esc key is pressed
 		if cv2.waitKey(1) == 27:
